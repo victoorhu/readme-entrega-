@@ -1,0 +1,93 @@
+# Sistema de Controle de Obras de Engenharia Civil
+
+
+**Disciplina:** Programação para Ciência de Dados  
+**Curso:** MBA Ciência de Dados - UNIFOR  
+**Instrutor:** Cássio Pinheiro  
+**Integrantes:** - Victor Hugo Soares Cristaldo (2527860)
+**Repositório GitHub:** [https://github.com/victoorhu/readme-entrega-/new/main]
+**Data de Entrega:** 08/11/2025
+
+## 📋 Objetivo
+
+Desenvolver um sistema para controle de obras de engenharia civil que permita registrar obras, acompanhar etapas, calcular progresso, gerenciar recursos e gerar relatórios de status das obras com enfoque em construtoras de médio e grande porte.
+
+## 🗺️ Diagrama de Contexto
+
+```
+┌─────────────────────────────────────────────────────────┐
+│      Sistema de Controle de Obras                       │
+├─────────────────────────────────────────────────────────┤
+│                                                         │
+│  ┌──────────────┐    ┌──────────────┐                   │
+│  │   Obras e    │───▶│  Processamento│                 │ 
+│  │   Etapas     │    │  e Cálculos   │                  │
+│  └──────────────┘    └──────────────┘                   │
+│         │                    │                          │
+│         │                    ▼                          │
+│         │    ┌──────────────────────────┐               │
+│         │    │  Progresso e Status     │                │
+│         │    │  de Obras                │               │
+│         │    └──────────────────────────┘               │
+│         │                    │                          │
+│         └────────────────────┘                          │
+│                    │                                    │
+│                    ▼                                    │
+│            ┌──────────────┐                             │
+│            │  Relatórios  │                             │
+│            │  e Alertas   │                             │
+│            └──────────────┘                             │
+└─────────────────────────────────────────────────────────┘
+```
+
+
+## 🔧 Funcionalidades Básicas
+
+1. **Cadastro de Obras**
+   - Registrar obra (nome, localização, tipo, data_inicio, orçamento)
+   - Definir etapas da obra
+   - Atribuir responsáveis
+
+2. **Gestão de Etapas**
+   - Registrar etapas (fundação, estrutura, acabamento, etc.)
+   - Marcar etapas como concluídas
+   - Registrar percentual de conclusão por etapa
+   - Calcular progresso geral da obra
+
+3. **Controle de Recursos**
+   - Registrar materiais utilizados
+   - Registrar mão de obra
+   - Calcular custos por etapa
+   - Comparar orçado vs realizado
+
+4. **Cálculos**
+   - Calcular percentual de conclusão geral
+   - Calcular custo total realizado
+   - Calcular desvio orçamentário
+   - Calcular tempo decorrido vs previsto
+
+5. **Análises**
+   - Identificar obras atrasadas
+   - Identificar obras acima do orçamento
+   - Obras por status (Em planejamento, Em execução, Concluída)
+   - Obras por tipo
+
+6. **Relatórios**
+   - Relatório de progresso por obra
+   - Relatório de custos
+   - Relatório de obras atrasadas
+   - Relatório geral de todas as obras
+
+
+
+## 💻 Requisitos Técnicos
+
+- Python 3.8+
+- Módulo `datetime` para cálculos de datas
+- Conhecimentos em:
+  - Tipos de dados (int, float, str, dict, list)
+  - Estruturas de controle (if/else, for, while)
+  - Funções com parâmetros e retorno
+  - Compreensões de lista e dicionário
+  - Operações com strings (formatação de datas)
+  - Operações matemáticas
